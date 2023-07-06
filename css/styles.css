@@ -1,19 +1,29 @@
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("https://www.imageshine.in/uploads/gallery/White-paper-texture-for-Projects.jpg");
 }
 
-.circular{
-    border-radius:100%;
-    transition: 1s;
-    opacity: 100%;
+.gif {
+    transition: transform 250ms, opacity 400ms;
 }
-.circular:hover{
-  border-radius:100%;
-  content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg50r4DXUGuo7MFKuF-kXt2ujvKN5sLfjuuLcihKoIKw&s");
-  opacity: 50%;
-  
+    .gif:hover {
+        width: 350px;
+        height: 120px;
+        opacity:80%;
+        transform: scale(0.99);
+        content: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d109ce23061557.563311582423a.jpg");
+    }
+
+.circular {
+    transition: transform 1s;
+    border-radius: 100%;
+    transition: transform 250ms, opacity 400ms;
 }
+    .circular:hover {
+        transform: scale(0.99);
+        border-radius: 100%;
+        content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg50r4DXUGuo7MFKuF-kXt2ujvKN5sLfjuuLcihKoIKw&s");
+    }
 hr {
   border-style: none;
   border-top-style: dotted;
@@ -30,79 +40,142 @@ h3{
 }
 
 
-.progressPhotography{
-  position: relative;
-  height: 15px;
-  width: 200px;
-  border: 3px solid #f4a261;
-  border-radius: 3px;
+.progressPhotography {
+    position: relative;
+    height: 15px;
+    width: 200px;
+    border: 1px solid #48C9B0;
+    border-radius: 3px;
 }
-.progressPhotography .colorPhotography{
-  position: relative;
-  background-color: black;
-  width: 0px;
-  height: 15px;
-  border-end-end-radius: 700px;
-  /* border-bottom-right-radius: 30px; */
-  animation: fill 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 1ms;
-}
+    .progressPhotography .colorPhotography {
+        position: relative;
+        background-color: black;
+        width: 0px;
+        height: 15px;
+        border-radius: 1px;
+        border-end-end-radius: 700px;
+        /* border-bottom-right-radius: 30px; */
+        animation: fill 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 1ms;
+    }
 
 @keyframes fill{
-  100%{
-      width: 85%; background-color: greenyellow;
-      border-radius: 0px;
-  }
-  }
-
-  .progressCoding {
-  position: relative;
-  height: 15px;
-  width: 200px;
-  border: 3px solid #f4a261;
-  border-radius: 3px;
-}
-.progressCoding .colorCoding {
-  position: relative;
-  background-color: black;
-  width: 0px;
-  height: 15px;
-  border-end-end-radius: 700px;
-  animation: fill1 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-
-@keyframes fill1{
-  100%{
-      width: 60%; background-color: rgb(95, 126, 218);
-      border-radius: 0%;
-  }
+    100% {
+        width: 85%;
+        background-color: greenyellow;
+        border-end-end-radius: 0%;
+    }
   }
 
-  .progressModelling {
-  position: relative;
-  height: 15px;
-  width: 200px;
-  border: 3px solid #f4a261;
-  border-radius: 3px;
+
+.progressIllustrator {
+    position: relative;
+    height: 15px;
+    width: 200px;
+    border: 1px solid #48C9B0;
+    border-radius: 3px;
 }
-.progressModelling .colorModelling {
-  position: relative;
-  background-color: black;
-  width: 0px;
-  height: 15px;
-  border-end-end-radius: 700px;
-  animation: fill2 3s;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
+
+    .progressIllustrator .colorIllustrator {
+        position: relative;
+        background-color: black;
+        width: 0px;
+        height: 15px;
+        border-radius: 1px;
+        border-end-end-radius: 700px;
+        /* border-bottom-right-radius: 30px; */
+        animation: fill1 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+@keyframes fill1 {
+    100% {
+        width: 70%;
+        background-color: steelblue;
+        border-end-end-radius: 0%;
+    }
 }
+
+.progressProgramming {
+    position: relative;
+    height: 15px;
+    width: 200px;
+    border: 1px solid #48C9B0;
+    border-radius: 3px;
+}
+    .progressProgramming .colorProgramming {
+        position: relative;
+        background-color: black;
+        width: 0px;
+        height: 15px;
+        border-radius: 1px;
+        border-end-end-radius: 700px;
+        animation: fill2 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
 
 @keyframes fill2{
-  100%{
-      width: 30%; background-color: rosybrown;
-      border-radius: 0%;
+    100% {
+        width: 60%;
+        background-color: rgb(95, 126, 218);
+        border-end-end-radius: 0%;
+    }
+  }
 
+.progressModelling {
+    position: relative;
+    height: 15px;
+    width: 200px;
+    border: 1px solid #48C9B0;
+    border-radius: 3px;
+}
+    .progressModelling .colorModelling {
+        position: relative;
+        background-color: black;
+        width: 0px;
+        height: 15px;
+        border-radius: 1px;
+        border-end-end-radius: 700px;
+        animation: fill3 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+    }
+
+@keyframes fill3{
+    100% {
+        width: 30%;
+        background-color: rosybrown;
+        border-end-end-radius: 0%;
+    }
   }
-  }
+
+.progressBlender {
+    position: relative;
+    height: 15px;
+    width: 200px;
+    border: 1px solid #48C9B0;
+    border-radius: 3px;
+}
+
+    .progressBlender .colorBlender {
+        position: relative;
+        background-color: black;
+        width: 0px;
+        height: 15px;
+        border-radius: 1px;
+        border-end-end-radius: 700px;
+        animation: fill4 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+    }
+
+@keyframes fill4 {
+    100% {
+        width: 40%;
+        background-color: cadetblue;
+        border-end-end-radius: 0%;
+    }
+}
