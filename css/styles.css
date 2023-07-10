@@ -1,6 +1,17 @@
 body {
+    margin:0 0 0 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("https://www.imageshine.in/uploads/gallery/White-paper-texture-for-Projects.jpg");
+  background-size: cover;
+}
+.home_btn {
+        cursor: pointer;
+        border: 2px solid #808080;
+        background-color: transparent;
+        height: 50px;
+        width: 100px;
+        color: #899499;
+        font-size: 18px;
 }
 
 .gif {
@@ -11,7 +22,7 @@ body {
         height: 120px;
         opacity:80%;
         transform: scale(0.99);
-        content: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d109ce23061557.563311582423a.jpg");
+        content: url("https://media4.giphy.com/media/d8tkB4uvd7v2o95bfK/giphy.gif?cid=ecf05e471oj57bk78emlyjfbs9a01koflv4rjraj7xilc53n&ep=v1_stickers_search&rid=giphy.gif&ct=s");
     }
 
 .circular {
@@ -24,11 +35,12 @@ body {
         border-radius: 100%;
         content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg50r4DXUGuo7MFKuF-kXt2ujvKN5sLfjuuLcihKoIKw&s");
     }
+
 hr {
   border-style: none;
   border-top-style: dotted;
   border-color: grey;
-  border-width: 10px;
+  border-width: 5px;
   width: 5%;
 }
 
@@ -49,7 +61,7 @@ h3{
 }
     .progressPhotography .colorPhotography {
         position: relative;
-        background-color: black;
+        background-color: whitesmoke;
         width: 0px;
         height: 15px;
         border-radius: 1px;
@@ -63,7 +75,7 @@ h3{
 @keyframes fill{
     100% {
         width: 85%;
-        background-color: greenyellow;
+        background-color: cadetblue;
         border-end-end-radius: 0%;
     }
   }
@@ -79,7 +91,7 @@ h3{
 
     .progressIllustrator .colorIllustrator {
         position: relative;
-        background-color: black;
+        background-color: whitesmoke;
         width: 0px;
         height: 15px;
         border-radius: 1px;
@@ -107,7 +119,7 @@ h3{
 }
     .progressProgramming .colorProgramming {
         position: relative;
-        background-color: black;
+        background-color: whitesmoke;
         width: 0px;
         height: 15px;
         border-radius: 1px;
@@ -134,7 +146,7 @@ h3{
 }
     .progressModelling .colorModelling {
         position: relative;
-        background-color: black;
+        background-color: whitesmoke;
         width: 0px;
         height: 15px;
         border-radius: 1px;
@@ -162,7 +174,7 @@ h3{
 
     .progressBlender .colorBlender {
         position: relative;
-        background-color: black;
+        background-color: whitesmoke;
         width: 0px;
         height: 15px;
         border-radius: 1px;
