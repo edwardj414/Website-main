@@ -16,6 +16,8 @@ body {
 
 .gif {
     transition: transform 250ms, opacity 400ms;
+    padding-left: 25%;
+    padding-right: 5%;
 }
     .gif:hover {
         width: 350px;
