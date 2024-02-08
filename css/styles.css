@@ -22,17 +22,6 @@ body {
         font-size: 18px;
 }
 
-.gif {
-    transition: transform 250ms, opacity 400ms;
-    padding-left: 25%;
-    padding-right: 5%;
-}
-    .gif:hover {
-        opacity:80%;
-        transform: scale(0.99);
-        content: url("https://media4.giphy.com/media/d8tkB4uvd7v2o95bfK/giphy.gif?cid=ecf05e471oj57bk78emlyjfbs9a01koflv4rjraj7xilc53n&ep=v1_stickers_search&rid=giphy.gif&ct=s");
-    }
-
 .circular {
     transition: transform 1s;
     border-radius: 100%;
